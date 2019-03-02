@@ -3,16 +3,20 @@
 
 <head>
 	<title>Video Game Review</title>
+	<link rel= "stylesheet" type= "text/css" href = "./style.css" th:href= "@{css/style.css}">
 </head>
 <body>
-	<h1>Review:</h1>
+	<h1>The Review:</h1>
 	
-	<div th:each= "review: ${reviews}">		
+	<div th:id="individualReview" th:each= "review: ${reviews}">		
 		 
-		<p th:text = "${review.name}"></p>
-		<p th:text = "${review.content}"></p>
-		<img th:src="@{'/images/' + ${review.url} + '.jpg'}" style="width:700px;height:500px;"/>
-		<p><a href ="http://localhost:8080/show-reviews">Back to reviews home</a></p>
+		<p th:id="individualReviewName" th:text = "${review.name}"></p>
+		<p th:id="individualReviewContent" th:text = "${review.content}"></p>
+		<img th:src="@{'/images/' + ${review.url} + '.jpg'}" style="width:700px;height:500px;" class = "center"/>
+		<footer>
+		<a href ="http://localhost:8080/show-reviews">Back to Reviews Home</a><a href ="http://localhost:8080/show-categories">Back to Categories</a>
+		
+		</footer>
 
 
 	</div>

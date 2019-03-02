@@ -1,18 +1,15 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-	<title>Video Game Reviews-Home Page</title>
+	<title >Video Game Reviews-Home Page</title>
+	<link rel= "stylesheet" type= "text/css" href = "./style.css" th:href= "@{css/style.css}">
 </head>
 <body>	
-	<h1>Sarah's Top Five Video Games OF ALL TIME</h1>
-	<img th:src="@{/images/controller.jpg}" />
-	<div th:each="review: ${reviews}">
-		<ul>
-		<li>
-		<a th:href="@{/review(id=${review.id})}" th:text="${review.name}"></a>
-		</li>
-		</ul>
+	<h1 id = "homePage">Sarah's Top Five Video Games OF ALL TIME</h1>
+	<img th:src="@{/images/controller.jpg}" class= "center"/>
+	<div th:id = "eachReview" th:each="review: ${reviews}" >
+		<p><a th:href="@{/review(id=${review.id})}" th:text="${review.name}"></a></p>
 	</div>
-	<p><a href= http://localhost:8080/show-categories>Show Categories</a></p>
+	<footer><a href= http://localhost:8080/show-categories>Show Categories</a></footer>
 </body>
 </html>

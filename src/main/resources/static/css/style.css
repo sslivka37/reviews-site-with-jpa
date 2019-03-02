@@ -1,0 +1,136 @@
+* {
+	font-family: sans-serif;
+	line-height: 1.618em;
+	box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to left top, blue, red) fixed;
+}
+
+
+#homePage {
+	text-align: center;
+	font-size: 3em;
+	color: #fff;
+}
+
+.center {
+	display: block;
+  	margin-left: auto;
+ 	margin-right: auto;
+ 	margin-top: 2em;
+ 	margin-bottom: 2em;
+ 	border: 10px solid #333
+}
+
+#eachReview {
+
+	display: flex;
+	flex-flow: row;
+	justify-content: center;
+	
+}
+
+#eachReview a {
+	
+	padding: .75em .75em;
+	text-decoration: none;
+	font-size: 1.5em;
+	color: #fff;
+
+}
+
+
+#eachReview a:hover {
+	background: #8e7f6b;
+	color: #07090c;
+}
+
+
+#individualReviewName {
+	text-align: center;
+	font-size: 3em;
+	color: #be7aef;
+}
+
+#individualReviewContent {
+	font-size: 1.5em;
+}
+
+#categoriesTitle {
+	text-align: center;
+
+}
+
+#categories {
+	text-align: center;
+
+}
+
+#categories a {
+	text-decoration: none;
+	color: #fff;
+	padding-top: .5em;
+	padding-bottom: .5em;
+	padding-right: .5em;
+	padding-left: .5em;
+
+}
+
+#categories a:hover {
+	background: #8e7f6b;
+	color: #07090c;
+}
+
+#individualCategoryTitle {
+	text-align: center;
+
+}
+
+#reviewsForCategory {
+	text-align: center;
+}
+
+#reviewsForCategory a{
+text-decoration: none;
+	color: #fff;
+	padding-top: .5em;
+	padding-bottom: .5em;
+	padding-right: .5em;
+	padding-left: .5em;
+}
+
+#reviewsForCategory a:hover{
+	background: #8e7f6b;
+	color: #07090c;
+}
+
+
+footer {
+	display: flex;
+	flex-flow: row;
+	justify-content: center;
+	background: #666;
+	
+}
+
+footer a {
+	padding: .5em .5em;
+	text-decoration: none;
+	font-size: 1em;
+	background: #666;
+	color: #fff;
+
+}
+
+footer a:hover {
+	background: #f97a02;
+}
+
+
+
+
+
+
+

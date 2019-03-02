@@ -31,7 +31,9 @@ public class ReviewPopulator implements CommandLineRunner {
 		farmingSim = categoryRepo.save(farmingSim);
 		
 		Review banjoKazooie = new Review("Banjo-Kazooie", 
-				"Banjo-Kazooie is just one of those games that come around every so often and blow your mind"
+				"Banjo-Kazooie is just one of those games that come around every so often and blow your mind. "
+				+ "The story was excellent, the puzzles were challenging enough but rewarding, and the soundtrack remains to date my favorite of all time."
+				+ " Banjo-Kazooie was my gateway into the world of hardcore video gaming and I've never looked back."
 				, "BanjoKazooie", platformer);
 		
 		banjoKazooie = reviewRepo.save(banjoKazooie);		
