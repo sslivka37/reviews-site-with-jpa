@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<title>Video Game Review Categories</title>
+</head>
+
+
+<body>
+	<header>
+	<h1>Video Game Categories:</h1>
+	</header>
+	
+	<div th:each ="category: ${categories}">
+		<h2>
+		<a th:href="@{/category(id=${category.id})}" th:text="${category.name}"></a>
+		</h2>
+	</div>
+
+</body>
+</html>

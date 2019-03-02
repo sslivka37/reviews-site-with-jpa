@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<title>Video Game Reviews-Home Page</title>
+</head>
+<body>	
+	<h1>Sarah's Top Five Video Games OF ALL TIME</h1>
+	<img th:src="@{/images/controller.jpg}" />
+	<div th:each="review: ${reviews}">
+		<ul>
+		<li>
+		<a th:href="@{/review(id=${review.id})}" th:text="${review.name}"></a>
+		</li>
+		</ul>
+	</div>
+	<p><a href= http://localhost:8080/show-categories>Show Categories</a></p>
+</body>
+</html>
