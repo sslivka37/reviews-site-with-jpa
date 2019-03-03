@@ -47,6 +47,25 @@ body {
 	color: #07090c;
 }
 
+#aboutMe {
+	margin-top: 5em;
+	text-align: center;
+	color: #fff;
+}
+
+#information{
+	display:grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: auto;
+	grid-column-gap: 1em;
+	margin-bottom: 2em;
+}
+
+#information article {
+	background: radial-gradient(ellipse at center, #cb60b3 0%,#ad1283 50%,#de47ac 100%);
+	padding: 1em;
+}
+
 
 #individualReviewName {
 	text-align: center;

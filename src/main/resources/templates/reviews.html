@@ -7,9 +7,29 @@
 <body>	
 	<h1 id = "homePage">Sarah's Top Five Video Games OF ALL TIME</h1>
 	<img th:src="@{/images/controller.jpg}" class= "center"/>
+	
 	<div th:id = "eachReview" th:each="review: ${reviews}" >
 		<p><a th:href="@{/review(id=${review.id})}" th:text="${review.name}"></a></p>
 	</div>
+	<section id = "aboutMe">
+		<h2>About Me</h2>
+		<p>Here's a little information about me as a person:</p>
+		<div id ="information">
+			<article>
+				<h3>Name</h3>
+				<p>Sarah Slivka</p>
+			</article>				
+			<article>
+				<h3>Location</h3>
+				<p>I was born and raised in Cleveland, Ohio!</p>
+			</article>				
+			<article>
+				<h3>Hobbies</h3>
+				<p>I enjoy video games (obviously), becoming an Otamotone savant, and sampling local vegan fare</p>
+			</article>
+			</div>
+	</section>
+
 	<footer><a href= http://localhost:8080/show-categories>Show Categories</a></footer>
 </body>
 </html>
